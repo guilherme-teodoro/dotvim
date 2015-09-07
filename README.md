@@ -22,5 +22,5 @@ sh install.sh
 - [Vim gitgutter](https://github.com/airblade/vim-gitgutter)
 
 ## Theme
-[Vim Material Theme] (https://github.com/jdkanani/vim-material-theme)
+[Material Theme] (https://github.com/jdkanani/vim-material-theme)
 
