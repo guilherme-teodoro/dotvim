@@ -18,3 +18,7 @@ sh install.sh
 - [Auto pairs](https://github.com/jiangmiao/auto-pairs)
 - [Vim Surround](https://github.com/tpope/vim-surround)
 - [Vim gitgutter](https://github.com/airblade/vim-gitgutter)
+
+## Theme
+[Vim Material Theme] (https://github.com/jdkanani/vim-material-theme)
+
