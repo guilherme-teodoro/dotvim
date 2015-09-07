@@ -1,5 +1,7 @@
 #!/bin/bash
-mv ${DIR} ~/.vim
+echo 'Moving files...'
+mkdir -p ~/.vim; mv * $_
+mv .gitignore ~/.vim; mv .git ~/.vim
 
 echo 'Creating symbolic link...'
 ln -s ~/.vim/vimrc ~/.vimrc
