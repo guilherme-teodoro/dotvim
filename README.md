@@ -2,6 +2,8 @@
 
 My humble dotVIM files
 
+![alt tag](https://raw.githubusercontent.com/guilherme-teodoro/dotvim/master/print.png)
+
 ## Install
 ``` bash
 git clone git@github.com:guilherme-teodoro/dotvim.git ~/
