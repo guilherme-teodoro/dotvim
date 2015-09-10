@@ -66,3 +66,4 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 map <silent> <C-n> :NERDTreeFocus<CR>
 nmap <leader>t :CtrlP<cr>
 
+let NERDTreeShowHidden=1

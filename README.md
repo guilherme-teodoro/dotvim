@@ -2,6 +2,8 @@
 
 My humble dotVIM files
 
+![alt tag](https://raw.githubusercontent.com/guilherme-teodoro/dotvim/master/print.png)
+
 ## Install
 ``` bash
 git clone git@github.com:guilherme-teodoro/dotvim.git ~/
@@ -20,5 +22,5 @@ sh install.sh
 - [Vim gitgutter](https://github.com/airblade/vim-gitgutter)
 
 ## Theme
-[Vim Material Theme] (https://github.com/jdkanani/vim-material-theme)
+[Material Theme] (https://github.com/jdkanani/vim-material-theme)
 
