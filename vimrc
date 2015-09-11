@@ -9,10 +9,16 @@ Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'pangloss/vim-javascript'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'mustache/vim-mustache-handlebars'
+
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'isRuslan/vim-es6'
 
 call vundle#end() 
 filetype plugin indent on 
@@ -44,8 +50,9 @@ colorscheme material-theme
 
 let g:airline_powerline_fonts = 0
 
-"let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
-"let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
+let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
 
 highlight clear SignColumn
 highlight GitGutterAdd ctermfg=green
