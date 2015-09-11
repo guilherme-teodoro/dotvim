@@ -35,7 +35,7 @@ set noswapfile
 set autoread
 
 set number
-set guifont=Monaco:h12
+set guifont=Hack:h12
 set linespace=3
 set laststatus=2
 set background=dark
