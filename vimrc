@@ -9,16 +9,21 @@ Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'isRuslan/vim-es6'
+Plugin 'rosenfeld/conque-term'
+Plugin 'rking/ag.vim'
+Plugin 'vim-scripts/npm.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end() 
 filetype plugin indent on 
@@ -41,7 +46,7 @@ set noswapfile
 set autoread
 
 set number
-set guifont=Hack:h12
+set guifont=Monaco:h12
 set linespace=3
 set laststatus=2
 set background=dark
@@ -50,16 +55,8 @@ colorscheme material-theme
 
 let g:airline_powerline_fonts = 0
 
-let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
-let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+let g:syntastic_javascript_checkers = ['eslint']
 autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
-
-highlight clear SignColumn
-highlight GitGutterAdd ctermfg=green
-highlight GitGutterChange ctermfg=yellow
-highlight GitGutterDelete ctermfg=red
-highlight GitGutterChangeDelete ctermfg=yellow
-call gitgutter#highlight#define_highlights()
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
