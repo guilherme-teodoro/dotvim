@@ -13,7 +13,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
-
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -60,7 +59,18 @@ autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
+
 map <silent> <C-n> :NERDTreeFocus<CR>
 nmap <leader>t :CtrlP<cr>
 
 let NERDTreeShowHidden=1
+
+" Disabled arrow keys 
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
